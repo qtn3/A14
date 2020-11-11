@@ -1,0 +1,42 @@
+body{
+    background-image: linear-gradient(to right, #00e1d9, transparent);
+    font-family: 'PT Sans', sans-serif;
+    color: #575757
+}
+#bottom{
+    position: fixed;
+    bottom: 0;
+    left: 42%;
+    font-weight: bold;
+    padding: 4px;
+}
+hr{
+    position: fixed;
+    bottom: 8%;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+    text-decoration: underline;
+}
+.container{
+    display: grid;
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+    grid-template-areas:
+        '. . .'
+        '. cook .'
+        '. . .'
+}
+#cook{
+    grid-area: cook;
+    justify-self: center;
+    font-size: 24px;
+    border: 4px solid black;
+    border-radius: 7px;
+    padding: 7px;
+}
+#cook:hover{
+    font-style: italic;
+    font-weight: bold;
+}
